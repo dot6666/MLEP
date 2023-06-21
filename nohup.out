@@ -1,0 +1,120 @@
+INFO:     Will watch for changes in these directories: ['/data1/xuze/five_chaper/MLEP/MLEP']
+INFO:     Uvicorn running on http://0.0.0.0:9990 (Press CTRL+C to quit)
+INFO:     Started reloader process [544938] using statreload
+INFO:     Started server process [545013]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     218.104.133.141:52802 - "POST /predict?measure=%E6%80%A5%E6%80%A7%E7%96%BC%E7%97%9B%E6%8E%A7%E5%88%B6,%E6%85%A2%E6%80%A7%E7%96%BC%E7%97%9B%E6%8E%A7%E5%88%B6 HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/root/venv/zwh/lib64/python3.6/site-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_readers.py", line 81, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+INFO:     64.62.197.188:13623 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/root/venv/zwh/lib64/python3.6/site-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_readers.py", line 81, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+INFO:     167.94.138.126:36424 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.138.126:38590 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.138.126:39482 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/root/venv/zwh/lib64/python3.6/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/root/venv/zwh/lib64/python3.6/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/root/venv/zwh/lib64/python3.6/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/root/venv/zwh/lib64/python3.6/site-packages/starlette/routing.py", line 699, in __call__
+    await self.default(scope, receive, send)
+  File "/root/venv/zwh/lib64/python3.6/site-packages/starlette/routing.py", line 593, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/venv/zwh/lib64/python3.6/site-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_readers.py", line 86, in maybe_read_from_IDLE_client
+    request_line_re, lines[0], "illegal request line: {!r}", lines[0]
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_util.py", line 91, in validate
+    raise LocalProtocolError(msg)
+h11._util.RemoteProtocolError: illegal request line: bytearray(b'SM')
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/root/venv/zwh/lib64/python3.6/site-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_readers.py", line 81, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/root/venv/zwh/lib64/python3.6/site-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_readers.py", line 81, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+WARNING:  Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/root/venv/zwh/lib64/python3.6/site-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/root/venv/zwh/lib64/python3.6/site-packages/h11/_readers.py", line 81, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+INFO:     184.105.247.194:60256 - "GET / HTTP/1.1" 404 Not Found
+INFO:     52.25.222.189:33196 - "GET / HTTP/1.1" 404 Not Found
